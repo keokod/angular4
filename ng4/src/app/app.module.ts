@@ -2,18 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MaPremiereComponent } from './ma-premiere/ma-premiere.component';
-import { UserItemComponent } from './user-item/user-item.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { HelloWordComponent } from './hello-word/hello-word.component';
+import { TeteComponent } from './tete/tete.component';
+import { BurgerComponent } from './tete/burger/burger.component';
+import { BanniereComponent } from './tete/banniere/banniere.component';
+import { LogoComponent } from './tete/logo/logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MaPremiereComponent,
-    UserItemComponent,
-    UserListComponent,
-    HelloWordComponent
+    TeteComponent,
+    BurgerComponent,
+    BanniereComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule

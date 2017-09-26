@@ -1,5 +1,5 @@
 {
-  "name": "ng4",
+  "name": "ohkod",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -21,8 +21,10 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
+    "semantic-ui": "^2.2.13",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

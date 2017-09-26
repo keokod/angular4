@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng4 App', () => {
+describe('ohkod App', () => {
   let page: AppPage;
 
   beforeEach(() => {

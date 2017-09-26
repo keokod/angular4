@@ -6,6 +6,9 @@ import { TeteComponent } from './tete/tete.component';
 import { BurgerComponent } from './tete/burger/burger.component';
 import { BanniereComponent } from './tete/banniere/banniere.component';
 import { LogoComponent } from './tete/logo/logo.component';
+import { MenuComponent } from './menu/menu.component';
+import { PageComponent } from './page/page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { LogoComponent } from './tete/logo/logo.component';
     TeteComponent,
     BurgerComponent,
     BanniereComponent,
-    LogoComponent
+    LogoComponent,
+    MenuComponent,
+    PageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

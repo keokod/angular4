@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Sticky footer styles
+-------------------------------------------------- */
+html, body {
+    height: auto !important;
+  }
+  
+  html {
+      position: relative;
+      min-height: 100%;  
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 5rem !important;
+    
+  }
+  
+  .ui.fixed.menu + .ui.grid {
+      padding-top: 3.75rem !important;
+  }
+  
+  .page-footer {
+    background-color: red;
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 5rem;
+  }
+  

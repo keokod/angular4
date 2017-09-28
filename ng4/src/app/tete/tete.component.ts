@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Tete} from './tete.model';
 @Component({
   selector: 'app-tete',
   templateUrl: './tete.component.html',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeteComponent implements OnInit {
 
-  constructor() { }
 
+  
   ngOnInit() {
   }
 

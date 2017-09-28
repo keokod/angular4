@@ -1,6 +1,7 @@
 .container {
     display: inline-block;
     cursor: pointer;
+    z-index:20;
 }
 
 .bar1, .bar2, .bar3 {
@@ -22,3 +23,17 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+.menuBurger{
+        
+       background:yellow;
+       width:100%;
+       position:fixed;
+       top:0px;
+       left:0px;
+       height:auto;
+       display:none;
+     }
+     .burgerOn{
+       display: block;
+     }

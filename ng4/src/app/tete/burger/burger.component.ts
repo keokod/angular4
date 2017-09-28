@@ -10,21 +10,14 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class BurgerComponent implements OnInit {
 
-  constructor() {
-  
-    console.log();
+  isBurger: boolean = false;
+  constructor() { 
   }
 
-  burger(event: any) {
-    let saClasse = event.target.classList;
-    console.log(saClasse.length);
-    if(saClasse.length == 1){
-      event.target.classList.add('class3'); // To ADD
-    }else{
-      event.target.classList.remove('change'); // To Remove
-    }
+  activeBurger(){
+    this.isBurger === false  ? this.isBurger = true :this.isBurger =false;
+    console.log(this.isBurger);
   }
-
   ngOnInit() {
   }
 

@@ -1,0 +1,29 @@
+<form class="ui form contact" [class.cacher]="isHideContact">
+
+  <div class="field">
+    <label>Nom</label>
+    <div class="two fields">
+      <div class="field">
+        <input name="shipping[first-name]" placeholder="société" type="text">
+      </div>
+      <div class="field">
+        <input name="shipping[last-name]" placeholder="nom" type="text">
+      </div>
+      <div class="field">
+          <input name="shipping[last-name]" placeholder="prénom" type="text">
+        </div>
+    </div>
+
+  </div>
+  <div class="field">
+    <label>Address Postal</label>
+    <div class="fields">
+      <div class="twelve wide field">
+        <input name="shipping[address]" placeholder="votre adresse" type="text">
+      </div>
+      <div class="four wide field">
+        <input name="shipping[address-2]" placeholder="code postal" type="text">
+      </div>
+    </div>
+  </div>
+ </form>

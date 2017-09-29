@@ -1,4 +1,4 @@
-import { Component,ElementRef } from '@angular/core';
+import { Component,ElementRef} from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,8 @@ import { Component,ElementRef } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  isHideContact:boolean = true;
 
   public constructor(){
     console.log(ElementRef.length);

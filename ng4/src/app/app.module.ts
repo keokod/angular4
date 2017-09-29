@@ -9,6 +9,7 @@ import { LogoComponent } from './tete/logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
 import { PageComponent } from './page/page.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     LogoComponent,
     MenuComponent,
     PageComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule

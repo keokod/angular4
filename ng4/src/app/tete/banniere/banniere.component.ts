@@ -9,6 +9,7 @@ export class BanniereComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit() {
   }
 

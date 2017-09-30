@@ -1,8 +1,6 @@
-
-  <ul id="menu" class="ui five column grid" >
-    <li class="column" >Mon activité</li>
-    <li class="column" >Mes services</li>
-    <li class="column" >Technologie utilisé</li>
-    <li class="column">Contactez-moi</li>
-    <app-burger></app-burger>
-  </ul>
+<ul class="flex-container wrap">
+  <a 
+    *ngFor="let menu of menus" 
+    class="flex-item" 
+    (click)="setColor()" >{{menu.name}}</a>
+</ul> 

@@ -10,10 +10,13 @@ export class ContactComponent implements OnInit {
 
   contact:boolean = false;
 
-
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+export class Page{
+  
 }

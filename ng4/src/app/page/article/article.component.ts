@@ -21,17 +21,6 @@ const ARTICLES: Article[] = [
 
 export class ArticleComponent implements OnInit {
   articles: Article[] = ARTICLES;
-  couleur: any = {'background': 'green'};
-
-  changeCouleur() {
-    console.log("changer couleur");
-    this.couleur = {'background': 'blue'};
-  }
-
-  color() {
-    return this.couleur;
-  }
-
 
   constructor() { }
 

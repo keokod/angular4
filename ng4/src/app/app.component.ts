@@ -8,16 +8,12 @@ import { Component,ElementRef} from '@angular/core';
 })
 export class AppComponent {
 
+  idArticle:string='accueil'; //article 0 = home
   isHideContact:boolean = true;
 
+
   public constructor(){
-    console.log(ElementRef.length);
-    this.pousseFooter();
-  }
-
-  pousseFooter(){
-    console.log("---- FOOTER ---");
-
 
   }
+
 }

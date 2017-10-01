@@ -1,5 +1,7 @@
 <ul class="flex-container wrap">
   <a 
     *ngFor="let menu of menus" 
-    class="flex-item" >{{menu.name}}</a>
+    class="flex-item" 
+    (click)="changeMenu(menu.name)">{{menu.name}}
+  </a>
 </ul> 

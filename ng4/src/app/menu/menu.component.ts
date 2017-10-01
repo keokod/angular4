@@ -8,7 +8,7 @@ export class Menu{
 }
 
 const MENUS: Menu[] = [
-  {id:1,name:'mon activite'},
+  {id:1,name:'accueil'},
   {id:2,name:'Mes services'},
   {id:3,name:'Technologie utilisé'},
   {id:4,name:'Contactez-moi'},
@@ -26,8 +26,8 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-    choixArticle(menuId){
-      console.log("j'ai cliqué"+menuId);
+    changeMenu(menu){
+      console.log("j'ai cliqué"+menu);
     }
              
   ngOnInit() {

@@ -11,12 +11,9 @@ export class MenuComponent implements OnInit {
 
   menus: Menu[];
 
-  @Output()  onMenuSelected= EventEmitter<Menu>;
 
   constructor( ) { 
-    this.menus = [
-	new Menu('1','accueil'),
-	new Menu('2','activite'),
+
   }
 
   ngOnInit() {

@@ -1,7 +1,5 @@
 import { Component,ElementRef} from '@angular/core';
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,6 +15,7 @@ export class AppComponent {
   public constructor(){
 
   }
+  
   menuSelected(menu){
 	console.log(menu);
   }

@@ -2,6 +2,7 @@
   <a 
     *ngFor="let menu of menus" 
     class="flex-item" 
-    (click)="changeMenu(menu.name)">{{menu.name}}
+    (click)="menuCliked(menu.name)"
+    >{{menu.name}}
   </a>
 </ul> 

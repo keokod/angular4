@@ -1,4 +1,4 @@
-import { Component, OnInit, Input,ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-page',
@@ -8,24 +8,23 @@ import { Component, OnInit, Input,ElementRef } from '@angular/core';
 export class PageComponent implements OnInit {
 
   @Input() articleCourant;
-  @Input() ('artName') artName:string;
-  isValid = false;
+  constructor() {
 
-constructor() {
-
-}
-  setArticle(article:string){
+  }
+  setArticle(article: string) {
 
   }
 
-  getArticleCourant(){
-    return true;
+
+
+  isShow() {
+    return false;
   }
 
-    isSelected(nameArticle){
-      console.log(nameArticle);
-      return {'background':'green'} ;
-    }
+  isSelected(nameArticle) {
+    console.log(nameArticle);
+    return { 'background': 'green' };
+  }
   ngOnInit() {
   }
 

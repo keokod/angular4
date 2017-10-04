@@ -1,7 +1,9 @@
 
 <app-tete></app-tete>
-<app-menu></app-menu>
+<app-menu 
+(onMenuSelected)="onMenuSelected($event)"
+></app-menu>
 <div class="fin"></div>
-<app-page  [articleCourant]="idArticle" ></app-page>
+<app-page  [(articleCourant)]="article" ></app-page>
 <div class="fin"></div>
 <app-footer class="page-footer"></app-footer>

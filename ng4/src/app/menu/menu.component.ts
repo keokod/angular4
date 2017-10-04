@@ -1,18 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
-export class Menu{
-
-  id:number;
-  name:string;
-
-}
-
-const MENUS: Menu[] = [
-  {id:1,name:'accueil'},
-  {id:2,name:'Mes services'},
-  {id:3,name:'Technologie utilisé'},
-  {id:4,name:'Contactez-moi'},
-]
+import { Component, OnInit,EventEmitter,Output } from '@angular/core';
+import { Menu } from './menu.model';
 
 @Component({
   selector: 'app-menu',
@@ -22,14 +9,16 @@ const MENUS: Menu[] = [
 
 export class MenuComponent implements OnInit {
 
-  menus:Menu[] = MENUS;
+  menus: Menu[];
 
-  constructor() { }
+  @Output()  onMenuSelected= EventEmitter<Menu>;
 
-    changeMenu(menu){
-      console.log("j'ai cliqué"+menu);
-    }
-             
+  constructor( ) { 
+    this.menus = [
+	new Menu('1','accueil'),
+	new Menu('2','activite'),
+  }
+
   ngOnInit() {
   }
 

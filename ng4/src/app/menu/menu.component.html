@@ -1,8 +1,9 @@
-<ul class="flex-container wrap">
-  <a 
+<ul class="flex-container wrap"
     *ngFor="let menu of menus" 
     class="flex-item menu" 
     (click)="selectMenuEvent($event)"
-    >{{menu.name}}
+>
+  <a (click)="onSelectMenu(menu)">
+    {{menu.name}}
   </a>
 </ul> 

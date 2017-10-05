@@ -8,6 +8,7 @@ import { Component, OnInit, Input, ElementRef } from '@angular/core';
 export class PageComponent implements OnInit {
 
   @Input() articleCourant;
+  
   constructor() {
 
   }

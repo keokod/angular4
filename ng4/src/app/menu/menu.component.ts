@@ -9,19 +9,24 @@ import { Menu } from './menu.model';
 
 export class MenuComponent implements OnInit {
 
+  menuClicked : string;
+
   menus:any = [
     {"id":"1","name":"home"},
     {"id":"2","name":"service"},
   ];
 
-  @Output("menuSelected") sendRecord:EventEmitter<any> = new EventEmitter();
+  @Output() sendRecord:EventEmitter<any> = new EventEmitter();
 
   constructor( ) { 
   }
 
+  onSelectMenu(menu){
+    this.menuClicked = menu;//récupération du menu qu'on a cliquer
+  }
+
   selectMenuEvent(){
-    console.log(this.menus)
-    this.sendRecord.emit(this.menus);
+    this.sendRecord.emit(this.menuClicked);
 
   }
   ngOnInit() {

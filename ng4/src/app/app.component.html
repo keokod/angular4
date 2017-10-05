@@ -1,8 +1,9 @@
+<app-tete>
+</app-tete>
+<app-menu (sendRecord)="getRecord($event)">
+</app-menu>
 
-<app-tete></app-tete>
-<app-menu ></app-menu>
-<h1>{{menuSelected}}</h1>
 <div class="fin"></div>
-<app-page  [(articleCourant)]="article" ></app-page>
+<app-page [(articleCourant)]="menuSelectedData.name"></app-page>
 <div class="fin"></div>
 <app-footer class="page-footer"></app-footer>

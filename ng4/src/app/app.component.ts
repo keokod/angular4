@@ -1,4 +1,4 @@
-import { Component,ElementRef} from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +8,17 @@ import { Component,ElementRef} from '@angular/core';
 
 export class AppComponent {
 
-  article:string='accueil'; //article 0 = home
-  isHideContact:boolean = true;
-  public menuSelectedData:any = "home";
+  article: string = 'accueil'; //article 0 = home
+  isHideContact: boolean = true;
+  public menuSelectedData: any = "home";
 
-  public constructor(){
+  public constructor() {
 
   }
 
-  getRecord(data:any):void{
+  getRecord(data: any): void {
     console.log(data);
     this.menuSelectedData = data;
   }
-  
+
 }

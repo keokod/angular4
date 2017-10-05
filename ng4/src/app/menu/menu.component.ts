@@ -1,4 +1,4 @@
-import { Component, OnInit,EventEmitter,Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Menu } from './menu.model';
 
 @Component({
@@ -9,25 +9,26 @@ import { Menu } from './menu.model';
 
 export class MenuComponent implements OnInit {
 
-  menuClicked : string;
+  menuClicked: string;
 
-  menus:any = [
-    {"id":"1","name":"home"},
-    {"id":"2","name":"service"},
+  menus: any = [
+    { "id": "1", "name": "Accueil" },
+    { "id": "2", "name": "Prestation" },
+    { "id": "3", "name": "Technologie" },
+    { "id": "4", "name": "Contact" },
   ];
 
-  @Output() sendRecord:EventEmitter<any> = new EventEmitter();
+  @Output() sendRecord: EventEmitter<any> = new EventEmitter();
 
-  constructor( ) { 
+  constructor() {
   }
 
-  onSelectMenu(menu){
+  onSelectMenu(menu) {
     this.menuClicked = menu;//récupération du menu qu'on a cliquer
   }
 
-  selectMenuEvent(){
+  selectMenuEvent() {
     this.sendRecord.emit(this.menuClicked);
-
   }
   ngOnInit() {
   }

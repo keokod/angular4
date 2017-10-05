@@ -1,9 +1,6 @@
-<ul class="flex-container wrap"
-    *ngFor="let menu of menus" 
-    class="flex-item menu" 
-    (click)="selectMenuEvent($event)"
->
-  <a (click)="onSelectMenu(menu)">
-    {{menu.name}}
-  </a>
-</ul> 
+  <div class="menu four wide" *ngFor="let menu of menus" (click)="selectMenuEvent($event)"
+  >
+  <div (click)="onSelectMenu(menu)">
+      {{menu.name}}
+  </div>
+  </div>

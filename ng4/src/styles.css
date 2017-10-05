@@ -11,6 +11,9 @@ html, body {
   body {
     /* Margin bottom by footer height */
     margin-bottom: 5rem !important;
+    background:url('ruche.png') fixed;
+
+    color:white;
     
   }
   
@@ -19,7 +22,6 @@ html, body {
   }
   
   .page-footer {
-    background-color: red;
     position: absolute;
     bottom: -1rem;
     width: 100%;

@@ -9,13 +9,21 @@ import { Menu } from './menu.model';
 
 export class MenuComponent implements OnInit {
 
-  menus: Menu[];
+  menus:any = [
+    {"id":"1","name":"home"},
+    {"id":"2","name":"service"},
+  ];
 
+  @Output("menuSelected") sendRecord:EventEmitter<any> = new EventEmitter();
 
   constructor( ) { 
-
   }
 
+  selectMenuEvent(){
+    console.log(this.menus)
+    this.sendRecord.emit(this.menus);
+
+  }
   ngOnInit() {
   }
 

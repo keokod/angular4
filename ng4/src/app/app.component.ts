@@ -10,13 +10,15 @@ export class AppComponent {
 
   article:string='accueil'; //article 0 = home
   isHideContact:boolean = true;
-
+  public menuSelectedData:any = "home";
 
   public constructor(){
 
   }
-  
-  menuSelected(menu){
-	console.log(menu);
+
+  getRecord(data:any):void{
+    console.log(data);
+    this.menuSelectedData = data;
   }
+  
 }

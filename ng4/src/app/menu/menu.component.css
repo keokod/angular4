@@ -1,6 +1,6 @@
 .menu {
   cursor: pointer;
-  color:rgb(231, 1, 116);
+  color: #f0fff0;
 }
 .menu:hover {
   background: rgba(255, 255, 255, 0.37);

@@ -15,7 +15,8 @@ export class MenuComponent implements OnInit {
     { "id": "1", "name": "Accueil" },
     { "id": "2", "name": "Prestation" },
     { "id": "3", "name": "Technologie" },
-    { "id": "4", "name": "Contact" },
+    { "id": "4", "name": "portfolio" },
+    { "id": "5", "name": "Contact" },
   ];
 
   @Output() sendRecord: EventEmitter<any> = new EventEmitter();

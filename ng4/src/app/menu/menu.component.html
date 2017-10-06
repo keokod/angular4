@@ -1,6 +1,5 @@
-  <div class="menu four wide" *ngFor="let menu of menus" (click)="selectMenuEvent($event)"
-  >
+<div class="menu four wide" *ngFor="let menu of menus" (click)="selectMenuEvent($event)">
   <div (click)="onSelectMenu(menu)">
-      {{menu.name}}
+    {{menu.name}}
   </div>
-  </div>
+</div>

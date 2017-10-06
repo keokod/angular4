@@ -1,10 +1,17 @@
+app-banniere {
+  color: white;
+}
 app-menu {
-  background: #66BE5E;
+  background: #fd7654;
   line-height: 3em;
 }
+app-page {
+  color: white;
+}
 app-footer {
-  background: #66BE5E;
+  background: #fd7654;
   line-height: 6em;
+  color: white;
 }
 div.fin {
   height: 3em;

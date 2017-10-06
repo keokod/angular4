@@ -1,24 +1,49 @@
 <div class="ui centered grid">
     <div class="fifteen wide column">
-        <article *ngIf="!articleCourant">
-            pas d'article
+        <article *ngIf="!articleCourant" class="ui equal width grid centered">
+            <div *ngFor="let logo of logoEntrer" >
+
+                <img class="column" [src]="logo">
+            </div>
+
+
         </article>
         <article *ngIf="articleCourant == 'Accueil'">
             <h2>Mon activité</h2>
 
             <p>
-                Développeur web, j'ai décider de mettre mon savoir aux services les petites entreprises dans le domaine de l'informatique
-                et de l'électronique dans la région lyonnaise.
-                <br/> les compétences aquise tout au long de mon parcourt professionnel me permet d'avoir une première approche
-                en conseil technologique.
-                <br/> Ma méthode de travail est avant tout de comprendre l'environnement et la situation de votre entreprise,
-                afin de trouver une solution adapté à votre budget.<br/> mon activité tourne autour des la programmation
-                de base et d'intervention sur les serveurs de premier niveau:
+                Développeur web depuis quelques années, j'ai décider de mettre mon savoir aux services des petites entreprises dans le domaine
+                de l'informatique et de l'électronique autour de la région lyonnaise dans le cadres de petite projet.</p>
+
+            <p> les compétences aquise tout au long de mon parcourt professionnel me permet d'avoir une première approche en
+                conseil technologique pour une mise en place de vos solution informatique.</p>
+
+            <p>
+                Ma méthode de travail est avant tout de comprendre l'environnement de votre entreprise, afin de trouver une solution adapté
+                à votre budget.
             </p>
+
+            <p>
+                mon activité tourne autour de 4 activités:
+                <li>
+                    hardware informatiques (installation, configuration, mise à jours, remplacement de composant).
+                </li>
+                <li>
+                    développement logiciel web et électronique couplé avec l' arduino, beaglebone.
+                </li>
+                <li>
+                    admnistrateur réseaux de premier niveau (hébergement mutualisé, VPS, archivage sauvegarde, import export)
+                </li>
+                <li>
+                    Aide à l'utilisation et formation utilisation de CMS(wodpress, prestashop) , LMS (moodle) apprentissage sur la programmation
+                    procédural et objet.
+                </li>
+            </p>
+
         </article>
 
 
-        <article>
+        <article *ngIf="articleCourant == 'Prestation'">
             <h2>Mes services</h2>
 
             <ul>

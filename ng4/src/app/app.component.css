@@ -6,7 +6,9 @@ app-menu {
   line-height: 3em;
 }
 app-page {
+  display: block;
   color: white;
+  margin-top: 3em;
 }
 app-footer {
   background: #fd7654;

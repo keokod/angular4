@@ -6,3 +6,4 @@ export PATH=~/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/us$
 
 #mise en production 
 ng build --target=production --base-href'/'
+ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/"

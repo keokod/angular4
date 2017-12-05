@@ -30,3 +30,15 @@ rm -rf node_modules
 npm install --save-dev @angular/cli@latest
 
 npm instal
+
+
+=======================
+pour le cors mettre ceci dans le fichier php
+
+<?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: GET, POST, PUT');
+header('Content-Type: application/x-www-form-urlencoded');
+header('Content-Type: application/json');
+$data = json_decode(file_get_contents("php://input"));

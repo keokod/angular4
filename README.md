@@ -35,11 +35,9 @@ install semantic-ui
 npm install semantic-ui --save
 modifier le fichier angular-cli.json la racine du projet
       "styles": [
-        "../node_modules/semantic-ui-css/semantic.css",
         "../node_modules/semantic-ui/dist/semantic.min.css",
-        "styles.css"
+	"../src/styles.css"
       ],
-
 =======================
 pour le cors mettre ceci dans le fichier php
 

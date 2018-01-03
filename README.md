@@ -42,3 +42,6 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 header('Content-Type: application/x-www-form-urlencoded');
 header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"));
+===== 
+problème d'install visualstudio faire 
+apt-get install -f

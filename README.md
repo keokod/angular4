@@ -24,6 +24,10 @@ npm uninstall -g @angular/cli
     npm install -g @angular/cli@latest
 
     local project setup if you have one
+    //material
+    npm install --save @angular/material @angular/cdk @angular/animations hammerjs
+    
+    
 
 rm -rf node_modules
 

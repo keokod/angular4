@@ -8,6 +8,8 @@ export PATH=~/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/us$
 ng build --target=production --base-href'/'
 ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY/"
 
+problème de création de composant(se mettre dans le dossier voulous si c'est un sous comosant):
+ng generate component heure --module=app.module
 
 npm uninstall -g angular-cli
 

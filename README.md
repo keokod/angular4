@@ -79,3 +79,13 @@ installer web-animation et dans index.html ajouter ceci
 <script src="node_modules/zone.js/dist/zone.js"></script>
 
 <!-- application polyfills -->
+
+
+créer un composant enant:
+
+λ ng generate component tete/menu  --module=app
+CREATE src/app/tete/menu/menu.component.html (23 bytes)
+CREATE src/app/tete/menu/menu.component.spec.ts (614 bytes)
+CREATE src/app/tete/menu/menu.component.ts (261 bytes)
+CREATE src/app/tete/menu/menu.component.css (0 bytes)
+UPDATE src/app/app.module.ts (786 bytes)

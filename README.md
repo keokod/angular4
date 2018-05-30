@@ -1,4 +1,9 @@
 # angular4
+pour les problème rx/js angular6, mettre cette commande:
+
+PS C:\test> npm i rxjs-compat
++ rxjs-compat@6.2.0
+
 projet angular4
 #à l'installation mettre cette ligne dans .profil
 export PATH=~/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/us$

@@ -32,7 +32,7 @@ npm uninstall -g @angular/cli
 
     local project setup if you have one
     //material
-    npm install --save @angular/material @angular/cdk @angular/animations hammerjs web-animations-js --save
+    npm install --save @angular/material @angular/cdk @angular/animations hammerjs web-animations-js npm install rxjs-compat --save
     
     
 

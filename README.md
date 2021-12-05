@@ -1,4 +1,4 @@
-# angular4
+# angular4 aide json https://www.youtube.com/watch?v=kMVMxyp0KVo
 pour les problème rx/js angular6, mettre cette commande:
 
 PS C:\test> npm i rxjs-compat
